@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8dc626e57b3c82a6b0b880f41384c1b0",
+    "content-hash": "c5c21698cc3b589c67678f3d3d347d6b",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -2531,22 +2531,16 @@
         },
         {
             "name": "survos/workflow-helper-bundle",
-            "version": "1.2.22",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/survos/SurvosWorkflowHelperBundle.git",
-                "reference": "80076ec3345479ea4e5aebc6f686c79974bc0fdd"
-            },
+            "version": "dev-main",
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/survos/SurvosWorkflowHelperBundle/zipball/80076ec3345479ea4e5aebc6f686c79974bc0fdd",
-                "reference": "80076ec3345479ea4e5aebc6f686c79974bc0fdd",
-                "shasum": ""
+                "type": "path",
+                "url": "//home/tac/survos/survos/packages/workflow-helper-bundle",
+                "reference": "9739500e99ec17517df5930d0a8afeb71c541e89"
             },
             "require": {
                 "doctrine/orm": "^2.12",
                 "php": "^8.1",
-                "survos/core-bundle": "^1.2.22",
+                "survos/core-bundle": "^1.2",
                 "symfony/console": "^6.1.0",
                 "symfony/http-kernel": "^6.1.0",
                 "symfony/messenger": "^6.1.0",
@@ -2601,7 +2595,6 @@
                     "Survos\\WorkflowBundle\\": "src/"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -2616,11 +2609,9 @@
                 "symfony-ux",
                 "workflow"
             ],
-            "support": {
-                "issues": "https://github.com/survos/SurvosWorkflowHelperBundle/issues",
-                "source": "https://github.com/survos/SurvosWorkflowHelperBundle/tree/1.2.22"
-            },
-            "time": "2022-10-18T12:05:22+00:00"
+            "transport-options": {
+                "relative": false
+            }
         },
         {
             "name": "symfony/asset",
@@ -10286,6 +10277,102 @@
             "time": "2022-10-02T08:30:52+00:00"
         },
         {
+            "name": "symplify/config-transformer",
+            "version": "11.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symplify/config-transformer.git",
+                "reference": "17bf18375d7904419ffeec3e8acb50fb04b414c5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symplify/config-transformer/zipball/17bf18375d7904419ffeec3e8acb50fb04b414c5",
+                "reference": "17bf18375d7904419ffeec3e8acb50fb04b414c5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "bin": [
+                "bin/config-transformer"
+            ],
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Prefixed version of Symfony YAML/XML to PHP/YAML config converter",
+            "support": {
+                "source": "https://github.com/symplify/config-transformer/tree/11.1.10"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/rectorphp",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/tomasvotruba",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-09-29T10:41:41+00:00"
+        },
+        {
+            "name": "symplify/easy-coding-standard",
+            "version": "11.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symplify/easy-coding-standard.git",
+                "reference": "dc1c9c50059de9b0f51029a9446537f80bbf0c4e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symplify/easy-coding-standard/zipball/dc1c9c50059de9b0f51029a9446537f80bbf0c4e",
+                "reference": "dc1c9c50059de9b0f51029a9446537f80bbf0c4e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "conflict": {
+                "friendsofphp/php-cs-fixer": "<3.0",
+                "squizlabs/php_codesniffer": "<3.6"
+            },
+            "bin": [
+                "bin/ecs"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "10.3-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Prefixed scoped version of ECS package",
+            "support": {
+                "source": "https://github.com/symplify/easy-coding-standard/tree/11.1.10"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/rectorphp",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/tomasvotruba",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-09-29T10:40:41+00:00"
+        },
+        {
             "name": "theseer/tokenizer",
             "version": "1.2.1",
             "source": {
@@ -10338,7 +10425,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "survos/workflow-helper-bundle": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
