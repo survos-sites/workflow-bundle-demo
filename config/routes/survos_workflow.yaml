@@ -4,5 +4,5 @@
 #    prefix: /workflow
 #    type: annotation
 
-survos_workflows: {path: /workflows, controller: 'Survos\WorkflowBundle\Controller\WorkflowController::workflows'}
+survos_workflows: {path: /, controller: 'Survos\WorkflowBundle\Controller\WorkflowController::workflows'}
 survos_workflow: {path: "/workflow/{flowCode}", controller: 'Survos\WorkflowBundle\Controller\WorkflowController::workflow'}
