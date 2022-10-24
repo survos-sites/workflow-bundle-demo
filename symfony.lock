@@ -67,6 +67,9 @@
     "survos/bootstrap-bundle": {
         "version": "1.2.22"
     },
+    "survos/command-bundle": {
+        "version": "dev-main"
+    },
     "survos/core-bundle": {
         "version": "1.2.22"
     },
