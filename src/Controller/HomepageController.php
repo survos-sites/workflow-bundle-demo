@@ -14,7 +14,7 @@ class HomepageController extends AbstractController
     public function index(WorkflowHelperService $workflowHelperService, ParameterBagInterface $parameters)
     {
         $workflows = $workflowHelperService->getWorkflowsGroupedByClass();
-        $configuration =  $parameters->get('workflows.configuration');
+        $configuration =  $workflowHelperService->getWorkflowConfiguration();
 
         return $this->render('homepage/index.html.twig', [
             'workflows' => $workflows,
