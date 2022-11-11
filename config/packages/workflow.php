@@ -11,6 +11,7 @@ use Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigura
 return static function (FrameworkConfig $framework) {
 //return static function (ContainerConfigurator $containerConfigurator): void {
 
+
     foreach ([Task::class] as $workflowClass) {
         \Survos\WorkflowBundle\Service\ConfigureFromAttributesService::configureFramework($workflowClass, $framework, [$workflowClass]);
     }
@@ -18,5 +19,7 @@ return static function (FrameworkConfig $framework) {
     foreach ([\App\Workflow\Publish::class] as $workflowClass) {
         \Survos\WorkflowBundle\Service\ConfigureFromAttributesService::configureFramework($workflowClass, $framework, ['stdclass']);
     }
+
+//    dd($framework->workflows());
 
 };
