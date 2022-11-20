@@ -1,0 +1,11 @@
+{
+    "controllers": {
+        "@survos/workflow-helper-bundle": {
+            "workflow": {
+                "enabled": true,
+                "fetch": "eager"
+            }
+        }
+    },
+    "entrypoints": []
+}
