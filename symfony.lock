@@ -61,6 +61,9 @@
     "survos/core-bundle": {
         "version": "1.2.22"
     },
+    "survos/maker-bundle": {
+        "version": "dev-main"
+    },
     "survos/workflow-helper-bundle": {
         "version": "1.2.22"
     },

@@ -18,4 +18,5 @@ return [
     Survos\CommandBundle\SurvosCommandBundle::class => ['all' => true],
     Survos\WorkflowBundle\SurvosWorkflowBundle::class => ['all' => true],
     Symfony\UX\StimulusBundle\StimulusBundle::class => ['all' => true],
+    Survos\Bundle\MakerBundle\SurvosMakerBundle::class => ['all' => true],
 ];
