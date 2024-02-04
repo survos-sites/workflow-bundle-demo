@@ -22,7 +22,11 @@ node_modules
 
 ###> symfony/asset-mapper ###
 /public/assets/
+<<<<<<< ours
 /public/build/
 /assets/vendor
 
+=======
+/assets/vendor/
+>>>>>>> theirs
 ###< symfony/asset-mapper ###

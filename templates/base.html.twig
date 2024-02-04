@@ -1,10 +1,9 @@
-{% extends '@SurvosBootstrap/bs5/base.html.twig' %}
-        {% block stylesheets %}
-            {{ ux_controller_link_tags() }}
-            {{ encore_entry_link_tags('app') }}
-        {% endblock %}
+{% extends "@SurvosBootstrap/%s/base.html.twig"|format(theme_option('theme')) %}
+    {% block stylesheets %}
+    {% endblock %}
 
-        {% block javascripts %}
-            {{ importmap('app') }}
-            {{ encore_entry_script_tags('app') }}
-        {% endblock %}
+    {% block javascripts %}
+        {% block importmap %}{{ importmap('app') }}{% endblock %}
+    {% endblock %}
+
+
