@@ -4,13 +4,25 @@
 {% block body %}
 
     <div class="row">
+        <h3>State Machines</h3>
         <div class="col-md-6">
-            {% for workflow in workflowsByTaggedIterator %}
-                <h4>Workflow: {{ workflow.name }},
-                    class: {{ workflowsConfiguration[workflow.name].supports|join(', ') }}</h4>
+            {% for workflow in workflows %}
+                {% set definition = workflow.definition %}
+                <h4><u>{{ workflow.name }}</u>
+                    <i>Supports
+                     {{ workflowsConfiguration[workflow.name].supports|join(', ') }}
+                    </i>
+                </h4>
+                <h5>Places</h5>
                 <ul>
-                    {% for place in workflow.definition.places %}
+                    {% for place in definition.places %}
                         <li>{{ place }}</li>
+                    {% endfor %}
+                </ul>
+                <h5>Transitions</h5>
+                <ul>
+                    {% for t in definition.transitions %}
+                        <li>{{ t.name }}</li>
                     {% endfor %}
                 </ul>
             {% endfor %}
@@ -18,7 +30,7 @@
         </div>
 
         <div class="col-md-6">
-            <h3>Workflows configurations</h3>
+            <h3>All Workflows configurations</h3>
             {% for code, config in workflowsConfiguration %}
                 <h4>{{ code }}</h4>
                 <ul>

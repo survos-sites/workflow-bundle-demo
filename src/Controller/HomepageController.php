@@ -13,16 +13,15 @@ use Symfony\Component\Routing\Attribute\Route;
 class HomepageController extends AbstractController
 {
     #[Route('/', name: 'app_homepage')]
-    public function index(WorkflowHelperService $workflowHelperService,
-                          #[AutowireLocator('workflow.state_machine')] ServiceLocator $workflowsByTaggedIterator,
+    public function index(WorkflowHelperService                                       $workflowHelperService,
+                          #[AutowireLocator('workflow.state_machine')] ServiceLocator $stateMachines,
     ): Response
     {
         $workflows = $workflowHelperService->getWorkflowsGroupedByClass();
         $configuration =  $workflowHelperService->getWorkflowConfiguration();
-
         return $this->render('homepage/index.html.twig', [
-            'workflows' => $workflows,
-            'workflowsByTaggedIterator' => $workflowsByTaggedIterator,// $workflowHelperService->getWorkflowsFromTaggedIterator(),
+//            'workflows' => $workflows,
+            'workflows' => $stateMachines,
             'workflowsConfiguration' => $configuration,
         ]);
     }
