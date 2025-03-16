@@ -16,7 +16,7 @@
         "survos/bootstrap-bundle": "^1.5",
         "survos/command-bundle": "^1.5",
         "survos/maker-bundle": "^1.5",
-        "survos/workflow-helper-bundle": "^1.2.25",
+        "survos/workflow-helper-bundle": "^1.5",
         "symfony/asset": " ^7.1",
         "symfony/asset-mapper": "^7.1",
         "symfony/console": " ^7.1",
@@ -49,14 +49,15 @@
         "symfony/yaml": " ^7.1",
         "twig/extra-bundle": "^3.0",
         "twig/intl-extra": "^3.8",
-        "twig/twig": "^3.0|^4.0"
+        "twig/twig": "^3.15|^4.0"
     },
     "config": {
         "allow-plugins": {
             "composer/package-versions-deprecated": true,
+            "endroid/installer": true,
+            "survos/installer": true,
             "symfony/flex": true,
             "symfony/runtime": true,
-            "endroid/installer": true,
             "zenstruck/class-metadata": true
         },
         "optimize-autoloader": true,
@@ -102,8 +103,7 @@
     },
     "extra": {
         "symfony": {
-            "allow-contrib": true,
-            "require": "^7.1"
+            "allow-contrib": true
         }
     },
     "require-dev": {

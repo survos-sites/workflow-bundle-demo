@@ -1,3 +1,4 @@
-survos_auth:
-  resource: '@SurvosWorkflowBundle/config/routes.php'
+survos_workflow:
+  resource: '@SurvosWorkflowBundle/config/routes.yaml'
   prefix: '/workflow'
+
