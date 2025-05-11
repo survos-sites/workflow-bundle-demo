@@ -89,7 +89,7 @@ framework:
           to: completed
 
     straight:
-      type: workflow
+      type: state_machine
       supports:
         - stdClass # Just a hack
       places:
