@@ -30,3 +30,4 @@ node_modules
 /assets/vendor/
 >>>>>>> theirs
 ###< symfony/asset-mapper ###
+config.bat
