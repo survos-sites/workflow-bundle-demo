@@ -17,7 +17,6 @@
         "survos/command-bundle": "^1.5",
         "survos/maker-bundle": "^1.5",
         "survos/state-bundle": "^1.7",
-        "survos/workflow-helper-bundle": "^1.5",
         "symfony/asset": " ^7.1",
         "symfony/asset-mapper": "^7.1",
         "symfony/console": " ^7.1",
