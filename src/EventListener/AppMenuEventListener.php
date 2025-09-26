@@ -5,7 +5,7 @@ namespace App\EventListener;
 use Survos\BootstrapBundle\Event\KnpMenuEvent;
 use Survos\BootstrapBundle\Traits\KnpMenuHelperInterface;
 use Survos\BootstrapBundle\Traits\KnpMenuHelperTrait;
-use Survos\WorkflowBundle\Service\WorkflowHelperService;
+use Survos\StateBundle\Service\WorkflowHelperService;
 use Symfony\Component\EventDispatcher\Attribute\AsEventListener;
 use Symfony\Component\Security\Core\Authorization\AuthorizationCheckerInterface;
 

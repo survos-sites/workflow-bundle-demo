@@ -5,11 +5,11 @@ namespace App\Entity;
 use App\Attribute\Crud;
 use App\Repository\TaskRepository;
 use Doctrine\ORM\Mapping as ORM;
-use Survos\WorkflowBundle\Traits\MarkingInterface;
-use Survos\WorkflowBundle\Traits\MarkingTrait;
-use Survos\WorkflowBundle\Attribute\Workflow;
-use Survos\WorkflowBundle\Attribute\Transition;
-use Survos\WorkflowBundle\Attribute\Place;
+use Survos\StateBundle\Traits\MarkingInterface;
+use Survos\StateBundle\Traits\MarkingTrait;
+use Survos\StateBundle\Attribute\Workflow;
+use Survos\StateBundle\Attribute\Transition;
+use Survos\StateBundle\Attribute\Place;
 
 #[ORM\Entity(repositoryClass: TaskRepository::class)]
 #[Workflow('PLACE_')]

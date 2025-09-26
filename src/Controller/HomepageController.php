@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-use Survos\WorkflowBundle\Service\WorkflowHelperService;
+use Survos\StateBundle\Service\WorkflowHelperService;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\DependencyInjection\Attribute\AutowireLocator;
 use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
